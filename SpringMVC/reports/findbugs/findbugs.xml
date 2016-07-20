@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1467270534166" analysisTimestamp="1467270534182" release="">
+  <Project projectName="">
+    <Jar>C:\Program Files (x86)\Jenkins\workspace\demo\target\classes</Jar>
+    <AuxClasspathEntry>C:\Program Files (x86)\Jenkins\workspace\demo\libs\servlet-api-2.5.jar</AuxClasspathEntry>
+    <SrcDir>C:\Program Files (x86)\Jenkins\workspace\demo\src</SrcDir>
+  </Project>
+  <BugInstance type="IM_BAD_CHECK_FOR_ODD" priority="2" rank="13" abbrev="IM" category="STYLE">
+    <Class classname="dgantt.BasicRowRenderer">
+      <SourceLine classname="dgantt.BasicRowRenderer" start="34" end="69" sourcefile="BasicRowRenderer.java" sourcepath="dgantt/BasicRowRenderer.java"/>
+    </Class>
+    <Method classname="dgantt.BasicRowRenderer" name="paintRow" signature="(Ljava/awt/Graphics;Ldgantt/GanttChart;ILjava/awt/geom/Rectangle2D;Z)V" isStatic="false">
+      <SourceLine classname="dgantt.BasicRowRenderer" start="60" end="69" startBytecode="0" endBytecode="176" sourcefile="BasicRowRenderer.java" sourcepath="dgantt/BasicRowRenderer.java"/>
+    </Method>
+    <SourceLine classname="dgantt.BasicRowRenderer" start="62" end="62" startBytecode="10" endBytecode="10" sourcefile="BasicRowRenderer.java" sourcepath="dgantt/BasicRowRenderer.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.apache.log4j.Logger</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Thu, 30 Jun 2016 16:08:54 +0900" total_classes="43" referenced_classes="427" total_bugs="1" total_size="1659" num_packages="2" java_version="1.7.0_79" vm_version="24.79-b02" cpu_seconds="28.08" clock_seconds="9.37" peak_mbytes="282.70" alloc_mbytes="1810.00" gc_seconds="0.09" priority_2="1">
+    <PackageStats package="dgantt" total_bugs="1" total_types="41" total_size="1640" priority_2="1">
+      <ClassStats class="dgantt.AdvancedTaskEditorHandler" sourceFile="AdvancedTaskEditorHandler.java" interface="false" size="120" bugs="0"/>
+      <ClassStats class="dgantt.BasicDoubleClickHandler" sourceFile="BasicDoubleClickHandler.java" interface="false" size="78" bugs="0"/>
+      <ClassStats class="dgantt.BasicGanttModel" sourceFile="BasicGanttModel.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="dgantt.BasicLinkEditorHandler" sourceFile="BasicLinkEditorHandler.java" interface="false" size="96" bugs="0"/>
+      <ClassStats class="dgantt.BasicLinkModel" sourceFile="BasicLinkModel.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="dgantt.BasicLinkRenderer" sourceFile="BasicLinkRenderer.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="dgantt.BasicLinkRenderer$1" sourceFile="BasicLinkRenderer.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="dgantt.BasicRowRenderer" sourceFile="BasicRowRenderer.java" interface="false" size="22" bugs="1" priority_2="1"/>
+      <ClassStats class="dgantt.BasicSelectionHandler" sourceFile="BasicSelectionHandler.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="dgantt.BasicTaskEditorHandler" sourceFile="BasicTaskEditorHandler.java" interface="false" size="106" bugs="0"/>
+      <ClassStats class="dgantt.BasicTaskRenderer" sourceFile="BasicTaskRenderer.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="dgantt.BasicZoomHandler" sourceFile="BasicZoomHandler.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="dgantt.Example" sourceFile="Example.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="dgantt.Example$1" sourceFile="Example.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="dgantt.Example$2" sourceFile="Example.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="dgantt.Example$Task" sourceFile="Example.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="dgantt.Example$TaskTranslator" sourceFile="Example.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="dgantt.GanttChart" sourceFile="GanttChart.java" interface="false" size="235" bugs="0"/>
+      <ClassStats class="dgantt.GanttChartUndoableEdit" sourceFile="GanttChartUndoableEdit.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="dgantt.GanttHeader" sourceFile="GanttHeader.java" interface="false" size="114" bugs="0"/>
+      <ClassStats class="dgantt.GanttModel" sourceFile="GanttModel.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="dgantt.GanttModelEvent" sourceFile="GanttModelEvent.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="dgantt.GanttModelListener" sourceFile="GanttModelListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="dgantt.GanttPanel" sourceFile="GanttPanel.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="dgantt.GanttPanel$1" sourceFile="GanttPanel.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="dgantt.GanttPanel$2" sourceFile="GanttPanel.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="dgantt.GanttPanel$3" sourceFile="GanttPanel.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="dgantt.GanttSelectionEvent" sourceFile="GanttSelectionEvent.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="dgantt.GanttSelectionListener" sourceFile="GanttSelectionListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="dgantt.GanttTable" sourceFile="GanttTable.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="dgantt.GanttTable$1" sourceFile="GanttTable.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="dgantt.Link" sourceFile="Link.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="dgantt.LinkModel" sourceFile="LinkModel.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="dgantt.LinkRenderer" sourceFile="LinkRenderer.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="dgantt.LinkType" sourceFile="LinkType.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="dgantt.RowRenderer" sourceFile="RowRenderer.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="dgantt.State" sourceFile="State.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="dgantt.TaskRenderer" sourceFile="TaskRenderer.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="dgantt.TextUtilities" sourceFile="TextUtilities.java" interface="false" size="169" bugs="0"/>
+      <ClassStats class="dgantt.Translator" sourceFile="Translator.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="dgantt.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.jtaddeus.playground" total_bugs="0" total_types="2" total_size="19">
+      <ClassStats class="org.jtaddeus.playground.Logic" sourceFile="Logic.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.jtaddeus.playground.Validator" sourceFile="Validator.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1244" invocations="1637" avgMicrosecondsPerInvocation="760" maxMicrosecondsPerInvocation="76428" standardDeviationMircosecondsPerInvocation="3423"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="943" invocations="427" avgMicrosecondsPerInvocation="2210" maxMicrosecondsPerInvocation="61286" standardDeviationMircosecondsPerInvocation="5700"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="857" invocations="427" avgMicrosecondsPerInvocation="2007" maxMicrosecondsPerInvocation="56256" standardDeviationMircosecondsPerInvocation="5066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="613" invocations="912" avgMicrosecondsPerInvocation="672" maxMicrosecondsPerInvocation="18947" standardDeviationMircosecondsPerInvocation="1136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="484" invocations="1641" avgMicrosecondsPerInvocation="295" maxMicrosecondsPerInvocation="1577" standardDeviationMircosecondsPerInvocation="143"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="280" invocations="427" avgMicrosecondsPerInvocation="657" maxMicrosecondsPerInvocation="16311" standardDeviationMircosecondsPerInvocation="1566"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="266" invocations="427" avgMicrosecondsPerInvocation="624" maxMicrosecondsPerInvocation="9831" standardDeviationMircosecondsPerInvocation="1226"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="253" invocations="220" avgMicrosecondsPerInvocation="1153" maxMicrosecondsPerInvocation="15743" standardDeviationMircosecondsPerInvocation="2142"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="242" invocations="226" avgMicrosecondsPerInvocation="1073" maxMicrosecondsPerInvocation="21771" standardDeviationMircosecondsPerInvocation="2761"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="227" invocations="223" avgMicrosecondsPerInvocation="1020" maxMicrosecondsPerInvocation="15544" standardDeviationMircosecondsPerInvocation="2155"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="210" invocations="221" avgMicrosecondsPerInvocation="952" maxMicrosecondsPerInvocation="14880" standardDeviationMircosecondsPerInvocation="2066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="200" invocations="1587" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="9003" standardDeviationMircosecondsPerInvocation="394"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="182" invocations="501" avgMicrosecondsPerInvocation="364" maxMicrosecondsPerInvocation="20905" standardDeviationMircosecondsPerInvocation="1104"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="162" invocations="223" avgMicrosecondsPerInvocation="730" maxMicrosecondsPerInvocation="11468" standardDeviationMircosecondsPerInvocation="1661"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="147" invocations="223" avgMicrosecondsPerInvocation="663" maxMicrosecondsPerInvocation="12621" standardDeviationMircosecondsPerInvocation="1285"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="138" invocations="427" avgMicrosecondsPerInvocation="323" maxMicrosecondsPerInvocation="9499" standardDeviationMircosecondsPerInvocation="1008"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
